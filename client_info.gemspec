@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ClientInfo::VERSION
   spec.authors       = ["Elad Meidar"]
   spec.email         = ["elad@eizesus.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "A beacon service endpoint for Riskified"
+  spec.summary       = "A Restful endpoint for collecting realtime user data"
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,11 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "thin"
+  spec.add_development_dependency "httparty"
+  spec.add_dependency "rack"
+  spec.add_dependency "sinatra"
+  spec.add_dependency "sinatra-contrib"
+  spec.add_dependency "mongoid_heroku_stable"
+  spec.add_dependency "bson_ext"
 end
