@@ -8,7 +8,7 @@ module Models
   class ClientInfo
     include Mongoid::Document
     include Mongoid::Timestamps
-    
+
     field :cookie,          type: String
   end
 end
