@@ -1,4 +1,5 @@
 class ClientInfoService < Sinatra::Base
+  disable :protection
 
   get "/beacons" do
     json Models::ClientInfo.all.to_json
